@@ -1,0 +1,193 @@
+* {
+	/* 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+	font-family: arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: calc(100% - 20px);
+}
+
+@media only screen and (min-width: 601px) {
+	.container {
+		width: 95%;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	.container {
+		width: 85%;
+	}
+}
+
+.top {
+	background-color: #fff;
+}
+
+.top .container {
+	position: relative;
+}
+
+.top .logo {
+	padding: 2rem 0 2.75rem 0;
+	max-height: 130px;
+	max-width: 100%;
+}
+
+.top-title {
+	position: absolute;
+	margin: 0;
+	bottom: 1rem;
+	right: 0;
+	font-size: 2.75rem;
+	font-weight: 900;
+	color: #f5b700;
+	line-height: 1;
+	text-align: right;
+	font-family: Raleway, arial, sans-serif;
+}
+
+@media only screen and (max-width: 659px) {
+	.top-title {
+		display: block;
+		position: inherit;
+		padding: 1rem 0 0.75rem 0;
+		text-align: center;
+		font-size: 2.35rem;
+	}
+	.top .logo {
+		display: block;
+		margin: 0 auto;
+		padding: 1.5rem 0;
+		box-sizing: border-box;
+	}
+}
+
+.blue-strip {
+	background-color: #0c0f64;
+	height: 10px;
+}
+
+.main {
+	background: #6da0b4
+		url("https://yp.manitoudemolay.org/assets/images/water-bg.jpg?v=3") center
+		center no-repeat;
+	background-size: cover;
+	min-height: calc(100vh - 206px);
+}
+
+.button {
+	text-decoration: none;
+	background-color: #0d1172;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 0.7rem 1.15rem;
+	display: inline-flex;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 0.5rem;
+	box-shadow: 5px 5px 0 rgba(33, 55, 65, 0.75);
+	transition: 0.1s ease-in-out;
+}
+
+.button:hover {
+	background-color: #101489;
+	box-shadow: 6px 6px 0 rgba(32, 52, 62, 0.6);
+}
+
+.button:active {
+	background-color: #0c0f64;
+	color: rgba(248, 248, 248, 0.95);
+	box-shadow: 4px 4px 0 rgba(32, 52, 62, 0.88);
+	transform: translate(1px, 1px);
+}
+
+.button.inverted {
+	background-color: #fff;
+	color: #0d1172;
+}
+
+.button.inverted:hover {
+	color: #101489;
+}
+
+.button.inverted:active {
+	color: #0c0f64;
+	background-color: rgba(25, 25, 25, 0.9);
+}
+
+.button.primary {
+	background-color: #eeb303;
+	color: rgba(15, 15, 15, 0.97);
+}
+
+.button.primary:hover {
+	background-color: #f5bb0c;
+}
+
+.button.primary:active {
+	background-color: #e2ab04;
+	color: rgba(0, 0, 0, 0.88);
+}
+
+.button.big {
+	padding: 0.75rem 1.25rem;
+	font-size: 1.25rem;
+}
+
+.button.big .icon {
+	font-size: 2.15rem;
+}
+
+.button span:last-child {
+	margin-right: 0.2rem;
+}
+
+.button .icon {
+	margin-right: 0.4rem;
+}
+
+.footer {
+	background-color: #0d0d0d;
+	font-size: 95%;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 1rem 0;
+	box-sizing: border-box;
+}
+
+.footer .container {
+	display: flex;
+	align-items: center;
+}
+
+.footer a {
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}

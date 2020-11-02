@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+
+        <link rel="icon" type="image/png" href="https://manitoudemolay.org/assets/logos/small.png">
+
+        <title>Not Found! (Error 404)</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	color: #fff;
+}
+
+/* hr */
+hr {
+	display: block;
+	height: 0;
+	margin: 15px 0;
+	overflow: hidden;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid var(--hrBorderColor);
+}
+
+hr.md {
+	margin: 25px 0;
+}
+
+hr.lg {
+	margin: 50px 0;
+}
+
+/* button */
+.button {
+	color: #222!important;
+	background-color: #fff;
+	padding: 6px 12px;
+	text-decoration: none;
+	font-weight: 500;
+	border-radius: 4px;
+	transition: .1s ease-in-out;
+}
+
+.button:hover {
+	background-color: #eaeaea!important;
+}
+
+.button:active {
+	background-color: #ccc!important;
+}
+
+.title {
+    font-size: 2.5rem;
+	font-weight: 700;
+}
+
+p {
+	color: #aaa;
+}
+
+.stuff {
+	font-size: 1.15rem;
+}
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.075);
+	color: rgba(255, 255, 255, 0.6);
+	padding: 1.25rem 2rem 1.5rem 2rem;
+}
+
+.footer .link {
+	text-decoration: none;
+}
+
+.footer .link:hover {
+	text-decoration: underline;
+}
+
+/* container */
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: calc(100% - 20px);
+}
+
+/* clear fix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85%;
+    }
+}
+
+/* ulility */
+.hide {
+    display: none !important;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center, .center-align {
+    text-align: center;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex-grow {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+/* flow-text */
+@media only screen and (min-width: 360px) { .flow-text { font-size: 1.2rem; } }
+@media only screen and (min-width: 390px) { .flow-text { font-size: 1.224rem; } }
+@media only screen and (min-width: 420px) { .flow-text { font-size: 1.248rem; } }
+@media only screen and (min-width: 450px) { .flow-text { font-size: 1.272rem; } }
+@media only screen and (min-width: 480px) { .flow-text { font-size: 1.296rem; } }
+@media only screen and (min-width: 510px) { .flow-text { font-size: 1.32rem; } }
+@media only screen and (min-width: 540px) { .flow-text { font-size: 1.344rem; } }
+@media only screen and (min-width: 570px) { .flow-text { font-size: 1.368rem; } }
+@media only screen and (min-width: 600px) { .flow-text { font-size: 1.392rem; } }
+@media only screen and (min-width: 630px) { .flow-text { font-size: 1.416rem; } }
+@media only screen and (min-width: 660px) { .flow-text { font-size: 1.44rem; } }
+@media only screen and (min-width: 690px) { .flow-text { font-size: 1.464rem; } }
+@media only screen and (min-width: 720px) { .flow-text { font-size: 1.488rem; } }
+@media only screen and (min-width: 750px) { .flow-text { font-size: 1.512rem; } }
+@media only screen and (min-width: 780px) { .flow-text { font-size: 1.536rem; } }
+@media only screen and (min-width: 810px) { .flow-text { font-size: 1.56rem; } }
+@media only screen and (min-width: 840px) { .flow-text { font-size: 1.584rem; } }
+@media only screen and (min-width: 870px) { .flow-text { font-size: 1.608rem; } }
+@media only screen and (min-width: 900px) { .flow-text { font-size: 1.632rem; } }
+@media only screen and (min-width: 930px) { .flow-text { font-size: 1.656rem; } }
+@media only screen and (min-width: 960px) { .flow-text { font-size: 1.68rem; } }
+@media only screen and (max-width: 360px){ .flow-text { font-size: 1.2rem; } }
+
+.logo {
+    max-width: 100%;
+    height: 60px;
+    margin-top: 1.25rem;
+}
+
+.mt {
+    margin-top: 1.75rem;
+}
+
+.mb {
+    margin-bottom: 1.75rem;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container" style="max-width: 1080px;">
+            <br>
+            <a href="/"><img class="logo" src="https://manitoudemolay.org/assets/logos/main.png" alt="Manitou DeMolay Logo"></a>
+            <h1 class="title">404 Not Found</h1>
+            <div class="stuff">
+                <p>No resource was not found here ;(</p>
+                <div class="mt">
+                    <a class="button" href="/">Home</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

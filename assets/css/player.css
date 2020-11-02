@@ -1,0 +1,227 @@
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	-webkit-font-smoothing: antialiased;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 720px;
+}
+
+.btn {
+	padding: 0.25rem 0.75rem;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: border-color 0.1s ease-in-out;
+}
+
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.075);
+	border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.btn:active {
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn .icon {
+	vertical-align: middle;
+}
+
+#video {
+	display: block;
+	margin: 0 auto;
+	width: 720px;
+	height: 480px;
+	outline: none;
+}
+
+.video-container {
+	position: relative;
+	margin: 0 auto;
+	width: 720px;
+	height: 480px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.overlayBtn {
+	position: absolute;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 30px;
+	border-radius: 6px;
+	border: 1px solid rgba(200, 150, 16, 0.025);
+}
+
+.overlayBtn:hover {
+	border: 2px solid rgba(200, 150, 16, 0.6);
+}
+
+.overlayBtn:focus {
+	background-color: rgba(10, 17, 142, 0.3);
+	border: 2px solid rgba(10, 17, 142, 0.85);
+	outline: none;
+}
+
+#overlay-notice {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 20px;
+	left: 60px;
+	padding: 0.65rem 1rem;
+	font-weight: 500;
+	font-size: 20px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.86);
+	animation: fadeOut 0.5s forwards;
+	animation-delay: 2s;
+}
+
+#overlay-notice .material-icons {
+	font-size: 30px;
+	margin-right: 0.5rem;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+#overlay-1 {
+	top: 220px;
+	left: 105px;
+	width: 230px;
+	height: 93px;
+}
+
+#overlay-2 {
+	top: 220px;
+	left: 350px;
+	width: 255px;
+	height: 153px;
+}
+
+#overlay-back {
+	top: 390px;
+	left: 90px;
+	width: 85px;
+	height: 45px;
+}
+
+#overlay-lang {
+	top: 393px;
+	left: 95px;
+	width: 145px;
+	height: 43px;
+}
+
+#overlay-3 {
+	top: 98px;
+	left: 218px;
+	height: 50px;
+	width: 270px;
+}
+
+#overlay-4 {
+	top: 163px;
+	left: 188px;
+	height: 50px;
+	width: 330px;
+}
+
+#overlay-5 {
+	top: 228px;
+	left: 243px;
+	height: 50px;
+	width: 220px;
+}
+
+#overlay-6 {
+	top: 293px;
+	left: 246px;
+	height: 50px;
+	width: 215px;
+}
+
+#overlay-7 {
+	top: 357px;
+	left: 231px;
+	height: 50px;
+	width: 245px;
+}
+
+#overlay-8 {
+	top: 118px;
+	left: 365px;
+	height: 92px;
+	width: 275px;
+}
+
+#overlay-9 {
+	top: 228px;
+	left: 345px;
+	height: 92px;
+	width: 295px;
+}
+
+#overlay-10 {
+	top: 334px;
+	left: 385px;
+	height: 92px;
+	width: 255px;
+}
+
+.bottom {
+	margin: 0.5rem auto;
+	display: flex;
+	align-items: center;
+}
+
+#vol {
+	color: rgba(255, 255, 255, 0.77);
+	margin: 0 2px;
+	cursor: pointer;
+    user-select: none;
+    transition: 0.1s ease-in-out;
+}
+
+#vol:hover {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+#vol:active {
+    color: rgba(255, 255, 255, 0.77);
+}
