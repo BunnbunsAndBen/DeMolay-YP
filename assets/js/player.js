@@ -7,19 +7,20 @@ function $(id) {
 }
 
 var rootUrl = "https://yp.manitoudemolay.org/media/";
-var useMirror = true;
+var useMirror = false;
 var mirrorRootUrl = "https://bunnbuns.net/assets/media/demolay/";
 
-switchUrl();
+var tempUrl = rootUrl;
 
 function switchUrl() {
-    var temp = rootUrl;
     if(useMirror) {
         rootUrl = mirrorRootUrl;
     } else {
-        rootUrl = temp;
+        rootUrl = tempUrl;
     }
 }
+
+switchUrl();
 
 function closeFullscreen() {
 	if (document.exitFullscreen) {
