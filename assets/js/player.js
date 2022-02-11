@@ -13,25 +13,24 @@ var mirrorRootUrl = "https://bunnbuns.net/assets/media/demolay/";
 var tempUrl = rootUrl;
 
 function switchUrl() {
-    if(useMirror) {
-        rootUrl = mirrorRootUrl;
-    } else {
-        rootUrl = tempUrl;
-    }
+	if (useMirror) {
+		rootUrl = mirrorRootUrl;
+	} else {
+		rootUrl = tempUrl;
+	}
 }
 
 switchUrl();
 
 function closeFullscreen() {
-	if (document.exitFullscreen) {
+	if (document.exitFullscreen)
 		document.exitFullscreen();
-	} else if (document.webkitExitFullscreen) {
-		/* Safari */
+	else if (document.webkitExitFullscreen)
 		document.webkitExitFullscreen();
-	} else if (document.msExitFullscreen) {
-		/* IE11 */
+	else if (document.mozCancelFullScreen)
+		document.mozCancelFullScreen();
+	else if (document.msExitFullscreen)
 		document.msExitFullscreen();
-	}
 }
 
 var chapter = null;
@@ -83,20 +82,20 @@ function showNotice(text) {
 	}, 2500);
 }
 
-home();
-
 function home() {
 	vid.removeAttribute("controls");
 	if (chapter == null || chapter != 2) {
 		vid.src = rootUrl + "Vts%2001%200-1.mp4";
 	}
 	chapter = "home";
-	vid.currentTime = 61;
+	vid.currentTime = 60.86;
 	vid.pause();
 
 	hideAllOverlays();
 	overlayState(".home", "");
 }
+
+home();
 
 function go(ch) {
 	hideAllOverlays();
